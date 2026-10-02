@@ -1,0 +1,20 @@
+# 版本按本机实测环境锁定（Python 3.13，Windows）
+openai==1.99.9
+httpx==0.28.1
+
+# 向量检索。★torch 装 CPU 版就够，别让 pip 拉 2.5GB 的 CUDA 包：
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers==6.0.1
+torch==2.14.0
+numpy==2.2.4
+
+# 服务化
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+
+# 编排（图版本）
+langgraph==1.2.12
+grandalf==0.8          # 只为 draw_ascii() 画图，不装也能跑
+
+# 演示界面
+gradio==6.29.0

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+logs/
+vec_cache.npz
+
+# 临时产物与本地运行记录（★不入库：体积大、含本机路径、对读者无价值）
+out*.txt
+fail.txt
+f2.txt
+runs.json
+*.log
